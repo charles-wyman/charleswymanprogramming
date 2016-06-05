@@ -1,0 +1,303 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : June 4, 2016, 7:20:11 AM
+    Author     : Charles Wyman
+*/
+
+
+            @import url('http://fonts.googleapis.com/css?family=Tienne');
+            
+            body {
+                background-color: white;
+                color: lightgrey;
+                
+            }
+            
+            img {
+                height: auto;
+                width: auto;
+            }
+            
+            p {
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-top:5%;
+                margin-bottom:5%;
+            }
+            
+            #header {
+                width: auto;
+                margin-left: 0%;
+                background: linear-gradient(#009900, #99FF00); 
+            }
+            
+            #navBar {
+                display: table;
+               // position: relative;
+               width: 80%; 
+               margin-left: 10%;
+            //   margin-right: 10%;
+                padding: 0; 
+            }
+            
+            #navBar ul {
+                
+            }
+            
+            #navBar > li {
+                
+                list-style:none;
+                display: table-cell;
+                font-size: 2em;
+                width: 20%;
+               
+                text-align: center;
+                border-left: solid 1px whitesmoke;
+                border-right: solid 1px whitesmoke;
+            }
+            
+            #navBar > li > a {
+                color: white;
+            }
+            
+            #navBar > li:hover {
+                background-color: #3399CC;
+            }
+            
+            #main div {
+                
+            }
+            
+            #pageTitle {
+            //    display: inherit;
+                font-weight: bold;
+                font-size: 3em;
+            }
+            
+            #pageSummary {
+             //   display: inherit;
+                font-size: 2em;
+                font-style: italic;
+                
+            }
+
+            #main {
+                position: relative;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            
+            #footer {
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            
+            .flexslider {
+                width: 640px;
+                height: 320px;
+            }
+            
+            
+            .break {
+                border-bottom: solid 1px lightgray;
+            }
+
+            .caption {
+                
+            }
+            
+            .titleText {
+                font-family: tienne;
+              //  font-weight: bold;
+                font-size: 2em;                
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            
+            .arrow {
+
+    cursor: pointer;
+
+    display: block;
+    height: 64px;
+    margin-top: -35px;
+    outline: medium none;
+    position: absolute;
+    top: 50%;
+    width: 64px;
+    z-index: 5;
+}
+.arrow.prev {
+    background-image: url("../images/button_next1.png");
+    left: 20px;
+    opacity: 0.75;
+    transition: all 0.2s linear 0s;
+
+}
+.arrow.next {
+    background-image: url("../images/button_next1.png");
+    opacity: 0.75;
+    right: 20px;
+    transition: all 0.2s linear 0s;
+}
+.arrow.prev:hover{
+    opacity:1;
+}
+.arrow.next:hover{
+    opacity:1;
+}
+.nav {
+    bottom: -4px;
+    display: block;
+    height: 48px;
+    left: 0;
+    margin: 0 auto;
+    padding: 1em 0 0.8em;
+
+    position: absolute;
+
+    right: 0;
+
+    text-align: center;
+
+    width: 100%;
+
+    z-index: 5;
+
+}
+
+.nav li {
+    
+    overflow:hidden;
+
+    border: 5px solid #AAAAAA;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    display: inline-block;
+
+    height: 30px;
+
+    margin: 0 8px;
+
+    position: relative;
+
+    width: 50px;
+
+}
+
+.nav li.active {
+
+    border: 5px solid #FFFFFF;
+
+}
+
+.nav li img {
+
+    width: 100%;
+
+}
+
+ 
+
+.slider {
+    border: 15px solid #FFFFFF;
+
+    border-radius: 5px;
+
+    height: 500px;
+
+    margin: 20px auto;
+
+    position: relative;
+
+    width: 800px;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -ms-perspective: 1000px;
+    -o-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.slide {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+.slide.ng-hide-add {
+
+    opacity:1;
+
+    -webkit-transition:1s linear all;
+
+    -moz-transition:1s linear all;
+
+    -o-transition:1s linear all;
+
+    transition:1s linear all;
+
+    -webkit-transform: rotateX(50deg) rotateY(30deg);
+
+    -moz-transform: rotateX(50deg) rotateY(30deg);
+
+    -ms-transform: rotateX(50deg) rotateY(30deg);
+
+    -o-transform: rotateX(50deg) rotateY(30deg);
+
+    transform: rotateX(50deg) rotateY(30deg);
+
+    -webkit-transform-origin: right top 0;
+
+    -moz-transform-origin: right top 0;
+
+    -ms-transform-origin: right top 0;
+
+    -o-transform-origin: right top 0;
+
+    transform-origin: right top 0;
+
+}
+
+.slide.ng-hide-add.ng-hide-add-active {
+
+    opacity:0;
+
+}
+
+.slide.ng-hide-remove {
+
+    -webkit-transition:1s linear all;
+
+    -moz-transition:1s linear all;
+
+    -o-transition:1s linear all;
+
+    transition:1s linear all;
+
+ 
+
+    display:block!important;
+
+    opacity:0;
+
+}
+
+.slide, .slide.ng-hide-remove.ng-hide-remove-active {
+
+    opacity:1;
+
+}
+
+            

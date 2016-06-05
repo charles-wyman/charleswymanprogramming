@@ -1,0 +1,47 @@
+<div style="margin-top: 10px; margin-bottom: 10px; height: 100%;">
+    <div><br/></div>
+    <div class="container slider" style="overflow:hidden; max-width:100%; max-height:100%; background-color:#43B69F;">   
+              <img ng-repeat="photo in photos" class="slide" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)" ng-src="{{photo.src}}"  style="display:block; margin: 0 auto; max-width:480px; max-height: 320px;" />
+      
+        
+
+ 
+
+        <img class="arrow prev" href="#/art/" ng-click="showPrev()"/>
+
+        <img class="arrow next" href="#/art/" ng-click="showNext()"/>
+        <div>
+        <ul class="nav" style="overflow:scroll;">
+
+            <li ng-repeat="photo in photos" ng-class="{'active':isActive($index)}">
+                
+                <img ng-src="{{photo.src}}" alt="{{photo.desc}}" title="{{photo.desc}}" ng-click="showPhoto($index);"/>
+
+            </li>
+
+        </ul>
+        </div> 
+
+    </div>
+
+ 
+    <div>
+        <p>
+        
+            Above is an image gallery of different graphic designs I have done over the years. It's a collection of different event flyers and logos that I own the rights to. I included a photograph as well - I do enjoy
+            photography.
+        </p>
+        <p>
+            The majority of this work was done using Adobe Photoshop, Fireworks, and Illustrator. I also have very basic experience in 3D animation using Unity, as well as about a year's worth of experience in 2D animation,
+            which mainly involved creating frame animations as well as editing audio and video. I also have a great deal of experience in audio engineering. 
+        </p>
+        
+        <p>
+            
+        </p>
+        
+        
+        
+    </div>
+    
+</div>
